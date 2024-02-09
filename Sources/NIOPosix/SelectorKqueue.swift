@@ -14,7 +14,7 @@
 
 import NIOCore
 
-#if os(macOS) || os(iOS) || os(watchOS) || os(tvOS)
+#if os(macOS) || os(visionOS) || os(iOS) || os(watchOS) || os(tvOS)
 
 /// Represents the `kqueue` filters we might use:
 ///

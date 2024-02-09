@@ -13,7 +13,7 @@
 //===----------------------------------------------------------------------===//
 import NIOCore
 
-#if os(Linux) || os(Android) || os(FreeBSD) || os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+#if os(Linux) || os(Android) || os(FreeBSD) || os(visionOS) || os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 
 extension Shutdown {
     internal var cValue: CInt {
@@ -211,7 +211,7 @@ extension NIOBSDSocket {
     }
 }
 
-#if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+#if os(visionOS) || os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 import CNIODarwin
 private let CMSG_FIRSTHDR = CNIODarwin_CMSG_FIRSTHDR
 private let CMSG_NXTHDR = CNIODarwin_CMSG_NXTHDR
